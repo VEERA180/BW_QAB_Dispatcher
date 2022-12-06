@@ -1,0 +1,87 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="797.6,555.2" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="33">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
+      <x:String>UiPath.Mail.Exchange</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="30">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="400,330.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Password" />
+      <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="Mailmessages" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAI3GE9HhvgkqcOf72RsfWxAAAAAACAAAAAAAQZgAAAAEAACAAAAAY9KD8gw7Ff//c3LMcUI5L1bcTXM93FWIn5uzwaXo5GgAAAAAOgAAAAAIAACAAAAD0zGajeOoDJd77Yw4TLXdoAmJMy7aVVynxtGioaJ4EhCAAAACEmp+wlmNegmMwT7RFXxQAmOKn51BzO3WauubR5kf4aEAAAAAZKQsCZ6v6fnhgbhdPRnR9jRGrI19gAwTQQikNN4iYYRG3DuOMzfxeRSx1aJpZgoVdyhMMeUtO5GInzOrPYNRv" Result="[Password]" />
+    <ui:GetExchangeMailMessages ApplicationId="{x:Null}" DirectoryId="{x:Null}" Domain="{x:Null}" EmailAutodiscover="{x:Null}" FilterByMessageIds="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" SharedMailbox="{x:Null}" TimeoutMS="{x:Null}" AuthenticationMode="UserNameAndPassword" CustomFolder="Inbox" DisplayName="Get Exchange Mail Messages" ExchangeVersion="Exchange2013" GetAttachements="False" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="GetExchangeMailMessages_1" IsBodyHtml="False" MailFolder="Calendar" MarkAsRead="False" Messages="[Mailmessages]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[Password]" Server="https://outlook.office365.com/EWS/Exchange.asmx" Top="30" User="quoteautomationbot@outlook.com" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Mailmessages.ElementAt(0).Subject]" />
+  </Sequence>
+</Activity>
